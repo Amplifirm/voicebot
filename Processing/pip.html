@@ -1,0 +1,4 @@
+<canvas id="c"></canvas>
+<script>
+c=document.getElementById('c');x=c.getContext('2d');c.width=c.height=400;s=[[200,200]];d=[20,0];f=[100,100];setInterval(()=>{h=[s[0][0]+d[0],s[0][1]+d[1]];if(h[0]<0||h[0]>=400||h[1]<0||h[1]>=400||s.some(p=>p[0]==h[0]&&p[1]==h[1]))alert('Game Over!');s.unshift(h);if(h[0]==f[0]&&h[1]==f[1])f=[Math.floor(Math.random()*20)*20,Math.floor(Math.random()*20)*20];else s.pop();x.fillStyle='#000';x.fillRect(0,0,400,400);x.fillStyle='#0f0';s.forEach(p=>x.fillRect(p[0],p[1],20,20));x.fillStyle='#f00';x.fillRect(f[0],f[1],20,20)},100);onkeydown=e=>{k=e.keyCode;if(k==37&&d[0]==0)d=[-20,0];if(k==38&&d[1]==0)d=[0,-20];if(k==39&&d[0]==0)d=[20,0];if(k==40&&d[1]==0)d=[0,20]}
+</script>
