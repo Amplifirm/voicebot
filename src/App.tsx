@@ -1,8 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import ReliefGridHomepage from './pages/Home';
-import ErasmusGrantsDashboard from './pages/Contact';
+import Bloomsberry from './pages/Home';
 
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<ReliefGridHomepage />} />
-          <Route path="/1" element={<ErasmusGrantsDashboard />} />
+          <Route path="/" element={<Bloomsberry />} />
         
 
           
