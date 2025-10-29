@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Bloomsberry from './pages/Home';
+import VoiceBotVSL from './pages/Home';
 import FinancialProjections from './pages/Finance';
 
 
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Bloomsberry />} />
+          <Route path="/" element={<VoiceBotVSL />} />
           <Route path="/finance" element={<FinancialProjections />} />
         
 
