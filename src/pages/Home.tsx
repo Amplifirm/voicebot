@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { ArrowRight, Phone, Zap, Clock, TrendingUp } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { ArrowRight, Phone } from 'lucide-react';
 
 const VoiceBotVSL = () => {
   useEffect(() => {
@@ -25,12 +25,11 @@ const VoiceBotVSL = () => {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#demo" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Demo</a>
-            <a href="#features" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">Features</a>
             <a href="#faq" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">FAQ</a>
           </div>
           <a 
             href="#book" 
-            className="px-6 py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-lg transition-all shadow-lg shadow-orange-500/30"
+            className="px-6 py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-orange-500/30"
           >
             Book Call
           </a>
@@ -47,21 +46,21 @@ const VoiceBotVSL = () => {
         <div className="relative z-10 max-w-6xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm border border-orange-200 rounded-full text-sm text-orange-700 mb-8 shadow-sm">
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-            No-Contract Voice Bot Service
+            Setup in 72 Hours • No Long-Term Contracts
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-[1.1] tracking-tight text-slate-900">
-            Automate Every Call.
+            Your Phone Rings 24/7.
             <br />
             <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
-              Never Miss Revenue.
+              Your Team Doesn't Have To.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            AI voice agents that handle sales, support, and appointments 24/7.
+            AI voice agents that book appointments, qualify leads, and support customers—indistinguishable from your best rep.
             <br className="hidden md:block" />
-            Setup in 72 hours. No contracts. No hiring.
+            <strong className="text-slate-900">No hiring. No training. No missed calls.</strong>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
@@ -69,23 +68,23 @@ const VoiceBotVSL = () => {
               href="#book" 
               className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg rounded-xl transition-all duration-300 shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:scale-105"
             >
-              Book Free Call
+              Book Your Free Demo Call
               <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
             </a>
             <a 
               href="#demo" 
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-slate-50 text-slate-900 font-semibold text-lg rounded-xl transition-all duration-300 shadow-lg border border-slate-200 hover:border-slate-300"
             >
-              Listen to Demo
+              Hear Real Calls
             </a>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
             {[
-              { value: '80%', label: 'Cost Savings' },
-              { value: '24/7', label: 'Available' },
-              { value: '72hr', label: 'Setup' },
+              { value: '80%', label: 'Lower Cost Than Hiring' },
+              { value: '< 3 Days', label: 'To Go Live' },
+              { value: '99%', label: 'Uptime Guarantee' },
             ].map((stat) => (
               <div key={stat.label} className="bg-white/60 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 shadow-lg">
                 <div className="text-4xl font-bold bg-gradient-to-br from-orange-600 to-orange-500 bg-clip-text text-transparent mb-2">
@@ -103,27 +102,30 @@ const VoiceBotVSL = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900">
-              Hear It
-              <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent"> Live</span>
+              Don't Take Our Word For It.
+              <br />
+              <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">Listen.</span>
             </h2>
-            <p className="text-xl text-slate-600">Real AI conversations that sound 100% human</p>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              These are real calls handled by our AI. Your prospects won't know the difference.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
               {
-                title: 'Sales Outreach',
-                desc: 'Lead qualification call',
+                title: 'Cold Outbound Sales',
+                desc: 'Qualifying leads at scale',
                 file: '/019a2d0b-f473-7ff1-9e1f-34214a5ef166-1761692509998-56b9f759-110d-48fd-b720-afbfa29a172a-mono.wav',
               },
               {
                 title: 'Customer Support',
-                desc: 'Service interaction',
+                desc: 'Handling common requests',
                 file: '/019a2ae0-bb6d-7ffa-89ce-9cf59e3cfa44-1761656244962-30682093-1f56-4d92-bf1d-0beedfc9495f-mono.wav',
               },
               {
                 title: 'Appointment Booking',
-                desc: 'Scheduling consultation',
+                desc: 'Scheduling consultations',
                 file: '/019a2ff1-11af-7ff2-a979-d3f333543e75-1761741050787-56f85669-ec15-449d-ae9e-ab08e6c258a0-mono.wav',
               },
             ].map((demo) => (
@@ -147,50 +149,30 @@ const VoiceBotVSL = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Features */}
-      <section id="features" className="py-32 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900">
-              Why
-              <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent"> Voice AI?</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: Zap, title: 'Instant Setup', desc: 'Live in 1-3 days. We handle scripts, training, and integration.' },
-              { icon: Clock, title: '24/7 Operations', desc: 'Never miss a call. Your AI works while you sleep.' },
-              { icon: TrendingUp, title: 'Infinite Scale', desc: 'Handle 10 or 10,000 calls per day. No extra cost.' },
-            ].map((feature) => {
-              const Icon = feature.icon;
-              return (
-                <div key={feature.title} className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl p-8 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="text-orange-600" size={28} />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-slate-900">{feature.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{feature.desc}</p>
-                </div>
-              );
-            })}
+          <div className="text-center">
+            <a 
+              href="#book" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg rounded-xl transition-all duration-300 shadow-xl shadow-orange-500/30 hover:scale-105"
+            >
+              Ready to See This in Your Business?
+              <ArrowRight size={20} />
+            </a>
           </div>
         </div>
       </section>
 
       {/* Calendly */}
-      <section id="book" className="py-32 px-6 bg-white">
+      <section id="book" className="py-32 px-6 bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900">
-              Book Your
-              <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent"> Free Call</span>
+              See How It Works
+              <br />
+              <span className="bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">For Your Business</span>
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              30 minutes to discover how AI can transform your calling operations
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Book a 30-minute demo call. We'll show you exactly how our AI can handle your calls, integrate with your systems, and scale your operations—without the pitch.
             </p>
           </div>
 
@@ -201,61 +183,69 @@ const VoiceBotVSL = () => {
               style={{minWidth: '280px', height: '700px', background: 'white'}}
             ></div>
           </div>
+
+          <div className="text-center mt-12">
+            <p className="text-slate-600">
+              <strong className="text-slate-900">What happens on the call:</strong> We'll audit your current call flow, show you a custom demo, and give you a clear setup timeline—in 30 minutes or less.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-32 px-6 bg-slate-50">
+      <section id="faq" className="py-32 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900">FAQ</h2>
-            <p className="text-xl text-slate-600">Everything you need to know before getting started</p>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-slate-900">
+              Common Questions
+            </h2>
+            <p className="text-xl text-slate-600">Everything you need to know before booking</p>
           </div>
 
           <div className="space-y-4">
             {[
               { 
-                q: 'How long does setup take?', 
-                a: 'Most clients are live within 1-3 days. Our team handles 100% of the technical setup, including custom script development, AI voice training on your brand tone, system integration with your CRM and phone systems, and comprehensive testing. You simply review and approve - we do all the heavy lifting.' 
+                q: 'How long does setup actually take?', 
+                a: '1-3 days from contract signature to your first live call. We handle everything: custom script development, AI training on your brand voice, CRM/phone system integration, and testing. You review and approve—we do the work.' 
               },
               { 
-                q: 'Can I cancel anytime?', 
-                a: 'Absolutely. We believe in earning your business every month. There are no long-term contracts, no cancellation fees, and no penalties. Simply give us 7 days notice if you need to pause or cancel. You can also pause your subscription at any time if you need a break.' 
+                q: 'What happens if the AI can\'t handle a call?', 
+                a: 'Smart call routing. If the AI detects complexity, an escalation request, or confusion, it transfers to your team immediately with full context and a conversation summary. You stay in control.' 
               },
               { 
-                q: 'Do the bots sound human?', 
-                a: 'Yes! We use cutting-edge AI voice technology with natural intonation, appropriate pauses, and conversational flow. Most people cannot tell the difference from a real agent. Our bots can handle objections, answer questions dynamically, and even adjust tone based on the conversation context. Listen to our demo calls above to hear for yourself.' 
+                q: 'Can I really cancel anytime?', 
+                a: 'Yes. Zero long-term contracts. Cancel or pause with 7 days notice. No fees, no penalties. We earn your business every month.' 
               },
               { 
-                q: 'What if the bot cannot handle a call?', 
-                a: 'Our AI includes intelligent call routing. If the bot detects it needs human assistance - whether due to a complex question, escalation request, or technical issue - it seamlessly transfers the call to your team with full context and a summary of the conversation so far. You maintain complete control.' 
+                q: 'How much does this cost?', 
+                a: 'Pricing depends on call volume and complexity. Most clients pay significantly less than hiring even one full-time rep. Book a call and well give you transparent pricing based on your specific needs—no hidden fees.' 
               },
               { 
-                q: 'How much does it cost?', 
-                a: 'Pricing is customized based on your call volume, use case complexity, and specific needs. We offer packages starting from small-scale operations to enterprise solutions handling thousands of daily calls. Book a free call with us to discuss your requirements and receive a personalized quote with transparent pricing - no hidden fees.' 
+                q: 'What systems do you integrate with?', 
+                a: 'Salesforce, HubSpot, Zoho, Pipedrive, Google Calendar, Outlook, Calendly, Twilio, RingCentral, Vonage, and most major platforms. Custom integrations available. Well map this out during your demo call.' 
               },
               { 
-                q: 'What integrations do you support?', 
-                a: 'We integrate with most major CRMs (Salesforce, HubSpot, Zoho, Pipedrive), calendar systems (Google Calendar, Outlook, Calendly), phone systems (Twilio, RingCentral, Vonage), and can build custom integrations for your specific tools. During your onboarding call, we will map out all necessary integrations.' 
+                q: 'Will it actually sound human?', 
+                a: 'Listen to the demos above. Our AI uses natural intonation, pauses appropriately, handles objections, and adjusts tone based on context. Most people genuinely cant tell the difference.' 
               },
               { 
-                q: 'Is my data secure?', 
-                a: 'Yes. We take security seriously with enterprise-grade encryption, SOC 2 compliance, regular security audits, and strict data privacy policies. Your call data and customer information are encrypted in transit and at rest. We never share your data with third parties and you maintain full ownership of all conversations and records.' 
+                q: 'Is our data secure?', 
+                a: 'Enterprise-grade encryption, SOC 2 compliant, regular security audits, strict privacy policies. Your data is encrypted in transit and at rest. We never share it. You own all conversation records.' 
               },
               { 
-                q: 'Can I customize the bot\'s personality and responses?', 
-                a: 'Absolutely! During setup, we work with you to define your bot\'s personality, tone, script flow, and responses. Want it formal and professional? Friendly and casual? We train the AI to match your brand voice perfectly. You can update scripts and responses anytime through our dashboard, and changes take effect immediately.' 
+                q: 'Can we customize the voice and scripts?', 
+                a: 'Completely. During setup, we train the AI on your exact brand voice—formal, casual, industry-specific jargon, you name it. Update scripts anytime through the dashboard. Changes go live instantly.' 
               },
             ].map((faq) => (
               <details 
                 key={faq.q}
-                className="group bg-white border border-slate-200 hover:border-orange-300 rounded-2xl overflow-hidden transition-all duration-300 shadow-sm hover:shadow-md"
+                className="group bg-slate-50 border border-slate-200 hover:border-orange-300 rounded-2xl overflow-hidden transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 <summary className="p-6 cursor-pointer font-semibold text-lg flex justify-between items-center text-slate-900 hover:text-orange-600 transition-colors">
                   {faq.q}
                   <span className="text-2xl text-orange-500 group-open:rotate-45 transition-transform duration-300">+</span>
                 </summary>
-                <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-100">
+                <div className="px-6 pb-6 text-slate-600 leading-relaxed border-t border-slate-200">
                   {faq.a}
                 </div>
               </details>
@@ -269,7 +259,7 @@ const VoiceBotVSL = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
             <img src="/AmpLogo.png" alt="Amplifirm" className="h-6 w-auto" />
-            <span className="font-bold text-slate-900">amplifirm</span> 
+            <span className="font-bold text-slate-900">amplifirm</span>
           </div>
           <div className="text-sm text-slate-600">© 2025 Amplifirm. All rights reserved.</div>
         </div>
