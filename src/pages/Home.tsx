@@ -79,21 +79,7 @@ const VoiceBotVSL = () => {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
-            {[
-              { value: '80%', label: 'Lower Cost Than Hiring' },
-              { value: '< 3 Days', label: 'To Go Live' },
-              { value: '99%', label: 'Uptime Guarantee' },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-white/60 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 shadow-lg">
-                <div className="text-4xl font-bold bg-gradient-to-br from-orange-600 to-orange-500 bg-clip-text text-transparent mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-slate-600">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </section>
 
